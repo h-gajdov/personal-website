@@ -1,0 +1,116 @@
+body {
+    background: #181818;
+    font-family: 'Inter', "Helvetica Neue", sans-serif;
+}
+
+#navbar-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 33px;
+    margin-right: 70px;
+    align-items: center;
+}
+
+#navbar-container a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    width: 106px;
+    margin-left: 15px;
+
+    transition: color .3s, transform .3s;
+}
+
+#navbar-container a:hover {
+    color: #00c0ff;
+    transform: translateY(-5px);
+}
+
+#navbar-container a:nth-child(6) {
+    /*border-right: 1px solid white;*/
+    width: auto;
+    pointer-events: none;
+}
+
+#navbar-container .logo {
+    user-select: none;
+    width: 20px;
+    margin-left: 20px;
+
+    transition: filter .3s, transform .3s;
+}
+
+#navbar-container .logo:hover {
+    filter: invert(52%) sepia(60%) saturate(1789%) hue-rotate(160deg) brightness(104%) contrast(104%);
+}
+
+#main-content {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#main-content h1{
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+#main-content p{
+    font-size: 24px;
+    margin: 0;
+}
+
+#home-picture {
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#mouse-follower .circle {
+    position: absolute;
+    left: 50px;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* da ne smeta na interakciite so kopchinjata */
+    overflow: clip;; /* koga e nadvor od ekranot da ne go pokazhuva scrollbarot */
+}
+
+.smaller {
+    background: #00c0ff;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+
+    transition: width .2s, height .2s, opacity .2s;
+}
+
+.larger {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #00c0ff;
+    border-radius: 50%;
+    z-index: -1;
+
+    transition: opacity .2s;
+}
+
+.smaller[class~='animate'] {
+    width: 70px;
+    height: 70px;
+    opacity: 0.5;
+}
+
+.larger[class~='animate'] {
+    opacity: 0;
+}
+
+canvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
