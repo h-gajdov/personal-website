@@ -116,18 +116,17 @@ a {text-decoration: none;}
 }
 
 #main-content h1{
-    font-size: 36px;
+    font-size: 2.75em;
     margin-bottom: 15px;
     font-weight: 700;
 }
 
 #main-content h1 span {
-    font-size: 36px;
     color: #906d4a;
 }
 
 #main-content p {
-    font-size: 24px;
+    font-size: 1.85em;
     margin: 0;
     background: rgba(144, 109, 74, 0.4);
 }
