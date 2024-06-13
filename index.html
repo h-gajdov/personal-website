@@ -9,13 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="background"></div>
+
     <div id="navbar-container">
-        <a href="index.html">Home</a>
+        <a href="index.html" class="selected">Home</a>
         <a href="about.html">About</a>
-        <a href="index.html">Projects</a>
-        <a href="index.html">Education</a>
-        <a href="index.html">Contact</a>
-        <a>|</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a>12:27 am</a>
+    </div>
+
+    <div id="contacts-container">
         <a href="index.html" class="logo">
             <img src="img/facebook-logo.png" alt="Facebook Logo">
         </a>
@@ -28,17 +32,23 @@
         <a href="index.html" class="logo">
             <img src="img/github-logo.png" alt="Facebook Logo">
         </a>
+
+        <div id="fullscreen-button">
+            <img src="img/fullscreen-icon.png" alt="Fullscreen image">
+        </div>
     </div>
 
-    <div id="main-content">
-        <h1>Hey, I'm Hristijan</h1>
-        <p>
-            I am a student at FINKI from Veles <br>
-            who <span style="text-decoration: underline">likes to make games and code.</span>
-        </p>
+    <div id="home-content-wrapper">
+        <img id="home-picture" src="img/test.png" alt="Picture of me" data-tilt data-tilt-glare>
+        <div id="main-content">
+            <h1>Hey, I'm <span>HRISTIJAN</span></h1>
+            <p>
+                I am a student at FINKI from Veles <br>
+                who <span style="text-decoration: underline">likes to make games and code.</span>
+            </p>
+        </div>
     </div>
 
-    <img id="home-picture" src="img/home-picture.png" alt="Picture of me">
 
     <div id="mouse-follower">
         <div class="circle smaller"></div>
@@ -47,7 +57,9 @@
 
     <canvas></canvas>
 
+    <script src="js/button-input.js"></script>
     <script src="js/mouse-follower.js"></script>
     <script src="js/particles.js"></script>
+    <script src="js/tilt-effect.js"></script>
 </body>
 </html>

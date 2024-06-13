@@ -7,19 +7,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<!-- Inconsolata font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="background"></div>
+
     <div id="navbar-container">
         <a href="index.html">Home</a>
-        <a href="index.html">About</a>
-        <a href="index.html">Projects</a>
-        <a href="index.html">Education</a>
-        <a href="index.html">Contact</a>
-        <a>|</a>
+        <a href="about.html" class="selected">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a>12:27 am</a>
+    </div>
+
+    <div id="contacts-container">
         <a href="index.html" class="logo">
             <img src="img/facebook-logo.png" alt="Facebook Logo">
         </a>
-        <a href="about.html" class="logo">
+        <a href="index.html" class="logo">
             <img src="img/upwork-logo.png" alt="Facebook Logo">
         </a>
         <a href="index.html" class="logo">
@@ -28,8 +37,98 @@
         <a href="index.html" class="logo">
             <img src="img/github-logo.png" alt="Facebook Logo">
         </a>
+
+        <div id="fullscreen-button">
+            <img src="img/fullscreen-icon.png" alt="Fullscreen image">
+        </div>
     </div>
-    
+
+    <div id="landing-content">
+        <img src="img/coding-stock.jpg" alt="Laptop Stock Photo" data-tilt data-tilt-glare>
+        <p>I like solving <br> <span>problems with code.</span></p>
+    </div>
+
+    <div id="about-me-container">
+        <h1>About me</h1>
+        <h1>Skills</h1>
+        <p id="about-me-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet consequatur, deleniti dolores est
+            eveniet fugit harum natus nisi qui quo, repudiandae sint soluta suscipit velit voluptas voluptatibus!
+            Aliquam asperiores consequuntur dicta eaque error ex, in molestias natus, nemo nisi optio, quaerat ratione
+            sapiente ullam vitae. <br> <br>
+            Alias aut cumque deserunt, ea eum in ipsa ipsum, iste molestiae molestias nisi odio
+            possimus provident quaerat quos ratione recusandae saepe, temporibus velit voluptas! Adipisci, aliquid amet
+            beatae commodi deserunt dicta dolores doloribus dolorum ea, eius eligendi exercitationem ipsa necessitatibus
+            obcaecati officia officiis praesentium quas quo recusandae repellat, saepe sapiente sed soluta totam vel
+            velit voluptate! <br> <br>
+            <!--                Ad, amet aperiam aspernatur corporis debitis ducimus ex expedita maxime molestias neque,-->
+            <!--                odio perferendis perspiciatis quisquam quod recusandae reiciendis repellat sapiente similique ullam-->
+            <!--                voluptatum? Deleniti dolorem iusto laborum molestias nam, nostrum odio praesentium quasi quis voluptate! A-->
+            <!--                ab ad consequuntur deserunt dicta dolores dolorum eligendi et facere illo laborum, laudantium libero, magni-->
+            <!--                maxime modi molestiae necessitatibus nesciunt nihil nobis non numquam obcaecati perferendis quae quaerat-->
+            <!--                quis recusandae sed tempora temporibus ut vero!-->
+        </p>
+
+        <div id="skills-container">
+            <div class="skill-card" data-tilt data-tilt-glare>
+                <h1>Unity development</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet consequatur, deleniti.</p>
+
+                <div class="slider">
+                    <div class="filler"></div>
+
+                    <div class="skill-labels">
+                        <p>Entry</p>
+                        <p>Intermediate</p>
+                        <p>Advanced</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card" data-tilt data-tilt-glare>
+                <h1>Unity development</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet consequatur, deleniti.</p>
+
+                <div class="slider">
+                    <div class="filler"></div>
+
+                    <div class="skill-labels">
+                        <p>Entry</p>
+                        <p>Intermediate</p>
+                        <p>Advanced</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card" data-tilt data-tilt-glare>
+                <h1>Unity development</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet consequatur, deleniti.</p>
+
+                <div class="slider">
+                    <div class="filler"></div>
+
+                    <div class="skill-labels">
+                        <p>Entry</p>
+                        <p>Intermediate</p>
+                        <p>Advanced</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card" data-tilt data-tilt-glare>
+                <h1>Unity development</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet consequatur, deleniti.</p>
+
+                <div class="slider">
+                    <div class="filler"></div>
+
+                    <div class="skill-labels">
+                        <p>Entry</p>
+                        <p>Intermediate</p>
+                        <p>Advanced</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div id="mouse-follower">
         <div class="circle smaller"></div>
         <div class="circle larger"></div>
@@ -37,7 +136,9 @@
 
     <canvas></canvas>
 
+    <script src="js/button-input.js"></script>
     <script src="js/mouse-follower.js"></script>
     <script src="js/particles.js"></script>
+    <script src="js/tilt-effect.js"></script>
 </body>
 </html>
