@@ -336,7 +336,7 @@ canvas {
 #contacts-flex {
     display: flex;
     align-items: center;
-    margin-left: 17%;
+    margin-left: 17.022vw;
 }
 
 .contact p, .contact h1 {
