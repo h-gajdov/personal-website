@@ -317,20 +317,20 @@ canvas {
 #contacts-content > h1, #contacts-content > p {text-align: center;}
 
 #contacts-content > p {
-    font-size: 40px;
+    font-size: 2.134vw;
     color: grey;
 }
 
 #contacts-content > h1 {
-    font-size: 55px;
-    margin-bottom: 50px;
+    font-size: 2.935vw;
+    margin-bottom: 2.668vw;
 }
 
 .contact {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin: 40px 0;
+    gap: 0.8vw;
+    margin: 2.134vw 0;
 }
 
 #contacts-flex {
@@ -344,17 +344,17 @@ canvas {
 }
 
 .contact h1 {
-    font-size: 40px;
+    font-size: 2.134vw;
 }
 
 .contact p {
-    font-size: 18px;
+    font-size: 0.961vw;
 }
 
 .contact img {
     background: #131313;
-    background-size: 10px;
-    padding: 10px;
+    background-size: 0.534vw;
+    padding: 0.534vw;
     box-sizing: border-box;
     border-radius: 50%;
     width: 20%;
@@ -366,7 +366,7 @@ canvas {
     grid-template-columns: 100% 100%;
     grid-template-rows: 50% 160% 35%;
     align-content: center;
-    gap: 10px;
+    gap: 0.534vw;
 }
 
 #contacts-flex textarea {
@@ -391,7 +391,7 @@ canvas {
     background: #131313;
     color: white;
     border-radius: 7px;
-    width: 100px;
+    width: 5.336vw;
 }
 
 #contacts-flex button:hover {cursor: pointer;}
