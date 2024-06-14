@@ -119,7 +119,7 @@ a {text-decoration: none;}
 
 #main-content h1{
     font-size: 1.9vw;
-    margin-bottom: 15px;
+    margin-bottom: 0.7983vw;
     font-weight: 700;
 }
 
@@ -135,11 +135,9 @@ a {text-decoration: none;}
 
 #mouse-follower .circle {
     position: fixed;
-    left: 50px;
     transform: translate(-50%, -50%);
     pointer-events: none; /* da ne smeta na interakciite so kopchinjata */
     overflow: clip;; /* koga e nadvor od ekranot da ne go pokazhuva scrollbarot */
-    /*z-index: -1;*/
 }
 
 #home-picture {
@@ -156,8 +154,8 @@ a {text-decoration: none;}
 }
 
 .larger {
-    height: 30px;
-    width: 30px;
+    height: 1.5965vw;
+    width: 1.5965vw;
     border: 1px solid #00c0ff;
     border-radius: 50%;
 
@@ -165,8 +163,8 @@ a {text-decoration: none;}
 }
 
 .smaller[class~='animate'] {
-    width: 70px;
-    height: 70px;
+    width: 3.72vw;
+    height: 3.72vw;
     opacity: 0.5;
 }
 
@@ -190,13 +188,13 @@ canvas {
     margin: 7%;
 
     font-family: 'Inconsolata', monospace;
-    font-size: 36px;
+    font-size: 1.9vw; /* 36px */
     font-weight: 300;
     color: white;
 }
 
 #landing-content img {
-    border-radius: 35px;
+    border-radius: 1.86vw;
     /*mask-image: linear-gradient(to right, #000, rgba(0,0,0,0.2));*/
 }
 
@@ -213,7 +211,7 @@ canvas {
     grid-template-columns: 30% auto;
     grid-template-rows: auto auto;
     justify-content: center;
-    grid-column-gap: 71px;
+    grid-column-gap: 3.73vw;
     color: white;
     margin-bottom: 2%;
 }
@@ -224,13 +222,13 @@ canvas {
 
 #about-me-text {
     /*width: 30%;*/
-    font-size: 18px;
+    font-size: 0.96vw;
     /*text-align: justify;*/
     font-weight: 200;
     margin: 0;
     background: rgba(40, 40, 40, 0.9);
     border-radius: 20px;
-    height: 400px;
+    height: 21.345vw;
     padding: 20px 30px;
 }
 
@@ -245,26 +243,26 @@ canvas {
     box-sizing: border-box;
     width: 100%;
     background: #282828;
-    border-radius: 20px;
-    padding: 20px 30px;
+    border-radius: 1.067vw;
+    padding: 1.067vw 1.5965vw;
 }
 
 .skill-card h1 {
-    font-size: 18px;
+    font-size: 0.96vw;
     margin: 0;
 }
 
 .skill-card p {
-    font-size: 14px;
+    font-size: 0.747vw;
     font-weight: 200;
-    margin: 5px 0;
+    margin: 0.267vw 0;
 }
 
 .slider {
     position: relative;
     background: #444444;
     width: 100%;
-    height: 13px;
+    height: 0.694vw;
     border-radius: 20px;
     bottom: -30%;
 }
@@ -284,13 +282,13 @@ canvas {
 }
 
 .skill-labels p {
-    font-size: 9px;
+    font-size: 0.48vw;
 }
 
 #headings h1 {
-    font-size: 36px;
-    margin-bottom: 15px;
-    margin-top: 25px;
+    font-size: 1.921vw;
+    margin-bottom: 0.8vw;
+    margin-top: 1.334vw;
     font-weight: 700;
 }
 
