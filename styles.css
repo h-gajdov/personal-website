@@ -141,6 +141,10 @@ a {text-decoration: none;}
     /*z-index: -1;*/
 }
 
+#home-picture {
+    width: 20.5vw;
+}
+
 .smaller {
     background: #00c0ff;
     height: 7px;
