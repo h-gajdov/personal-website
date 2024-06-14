@@ -234,9 +234,9 @@ canvas {
 
 #skills-container {
     display: grid;
-    grid-template-columns: 258px 258px;
-    grid-template-rows: 221px 221px;
-    gap: 71px;
+    grid-template-columns: 13.767vw 13.767vw;
+    grid-template-rows: 11.793vw 11.793vw;
+    gap: 3.789vw;
 }
 
 .skill-card {
