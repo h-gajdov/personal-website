@@ -367,6 +367,8 @@ canvas {
     grid-template-rows: 50% 160% 35%;
     align-content: center;
     gap: 0.534vw;
+    width: 20.926vw;
+    height: 6.947vw;
 }
 
 #contacts-flex textarea {
