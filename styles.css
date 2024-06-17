@@ -7,6 +7,20 @@ body {
     color: white;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightgrey;
+    border-radius: 10px;
+}
+
 a {text-decoration: none;}
 
 #background {
@@ -315,15 +329,19 @@ canvas {
 #hobbies-container {
     display: grid;
     background: black;
-    grid-template-rows: auto 400px;
+    grid-template-rows: auto 26.756vw;
     grid-template-columns: 33% 33% 33%;
-    gap: 20px 40px;
-    padding: 30px 300px 100px 300px;
+    gap: 1.338vw 2.676vw;
+    padding: 2.007vw 20.067vw 6.689vw 20.067vw;
 }
 
 #hobbies-container p {margin: 0;}
 
-#hobbies-container > h1 {grid-column: 1 / end; margin: 0;}
+#hobbies-container > h1 {
+    font-size: 2.408vw;
+    grid-column: 1 / end;
+    margin: 0;
+}
 
 #hobbies-container h1 {
     text-align: center;
@@ -333,13 +351,14 @@ canvas {
     position: relative;
     background: #181818;
     border-radius: 20px;
-    padding: 20px;
+    padding: 1.338vw;
 
     transition: transform .3s;
 }
 
 .hobby h1 {
-    margin: 0 0 10px 0;
+    font-size: 1.739vw;
+    margin: 0 0 0.669vw 0;
 }
 
 .hobby p {
@@ -348,31 +367,17 @@ canvas {
 
 .hobby img {
     position: absolute;
-    bottom: 20px;
+    bottom: 1.338vw;
     width: 100%;
-    height: 165px;
-    margin: 10px -20px -20px -20px;
-    border-radius: 0 0 20px 20px;
+    height: 11.037vw;
+    margin: 0.669vw -1.338vw -1.338vw -1.338vw;
+    border-radius: 0 0 1.338vw 1.338vw;
     opacity: 0.8;
     mask-image: linear-gradient(to top, #000, rgba(0,0,0,0.01));
 }
 
 .hobby:hover {
     transform: scale(105%, 105%);
-}
-
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: lightgrey;
-    border-radius: 10px;
 }
 
 #contacts-content {
@@ -469,8 +474,8 @@ canvas {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    margin-top: 10px;
-    gap: 30px;
+    margin-top: 0.669vw;
+    gap: 2.007vw;
 }
 
 #projects-container > h1 {
@@ -480,7 +485,7 @@ canvas {
 }
 
 .project {
-    padding: 25px;
+    padding: 1.672vw;
     background: #181818;
     border-radius: 15px;
 
@@ -488,7 +493,7 @@ canvas {
 }
 
 .project h1 {
-    font-size: 22px;
+    font-size: 1.472vw;
 }
 
 .project p:first-of-type {
@@ -496,15 +501,17 @@ canvas {
 }
 
 .project p {
+    font-size: 0.87vw;
     color: grey;
 }
 
 .project a {
+    font-size: 0.87vw;
     display: inline-block;
     color: grey;
-    padding: 5px;
+    padding: 0.334vw;
     border: 1px solid grey;
-    margin-top: 5px;
+    margin-top: 0.334vw;
     border-radius: 5px;
 
     transition: color .3s, border .3s, box-shadow .3s;
