@@ -1,8 +1,6 @@
 body {
     background: #181818;
-    /*font-family: 'Inter', "Helvetica Neue", sans-serif;*/
     font-family: monospace;
-    /*overflow: hidden;*/
     margin: 0;
     color: white;
 }
@@ -53,7 +51,7 @@ a {text-decoration: none;}
 
 #navbar-container a:hover {
     color: #00c0ff;
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 #navbar-container a:nth-child(6) {
@@ -525,4 +523,42 @@ canvas {
 
 .project:hover {
     transform: scale(110%, 110%);
+}
+
+.images-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+
+.project-description {
+    background: #181818;
+    margin: 1.064vw 5.322vw;
+    padding: 0.532vw;
+    border-radius: 15px;
+}
+
+.project-description h1 {
+    text-align: center;
+    font-size: 1.916vw;
+}
+
+.project-description p {
+    padding: 0 1.064vw;
+    font-size: 1.064vw;
+}
+
+.images-container img {
+    width: 37.254vw;
+    height: 21.288vw;
+    transition: transform 0.3s;
+}
+
+.images-container img:hover {
+    transform: scale(110%, 110%);
+}
+
+.images-container img:last-child {
+    position: relative;
+    left: 50%;
 }

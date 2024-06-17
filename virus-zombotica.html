@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virus Zombotica</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Inconsolata font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="background"></div>
+
+<div id="navbar-container">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html" class="selected">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a id="clock">12:27 am</a>
+</div>
+
+<div class="project-description">
+    <h1>Virus Zombotica</h1>
+    <p>Virus Zombotica is a wave based FPS zombie shooter game developed with the Unity Game Engine with the C# programming language. It supports singleplayer and multiplayer using the Photon Networking API. It has different weapons with unique specifications, a procedurally generated recoil and ragdoll physics. More info <a href="https://www.upwork.com/freelancers/~0118cc0f1273d54744?p=1606804091829571584">here</a>.</p>
+    <div class="images-container">
+        <img src="img/projects/virus-zombotica-1.jpg" alt="Picture of the weapons">
+        <img src="img/projects/virus-zombotica-2.jpg" alt="Picture of another player">
+        <img src="img/projects/virus-zombotica-3.jpg" alt="Picture of the ragdoll physics">
+    </div>
+</div>
+
+<div id="contacts-container">
+    <a href="https://www.facebook.com/hristijan.gajdov/" class="logo">
+        <img src="img/facebook-logo.png" alt="Facebook Logo">
+    </a>
+    <a href="https://www.upwork.com/freelancers/~0118cc0f1273d54744" class="logo">
+        <img src="img/upwork-logo.png" alt="Upwork Logo">
+    </a>
+    <a href="https://www.instagram.com/h.gajdov/" class="logo">
+        <img src="img/instagram-logo.png" alt="Instagram Logo">
+    </a>
+    <a href="https://github.com/h-gajdov" class="logo">
+        <img src="img/github-logo.png" alt="Github Logo">
+    </a>
+
+    <div id="fullscreen-button">
+        <img src="img/fullscreen-icon.png" alt="Fullscreen image">
+    </div>
+</div>
+
+<div id="mouse-follower">
+    <div class="circle smaller"></div>
+    <div class="circle larger"></div>
+</div>
+
+<canvas></canvas>
+
+<script src="js/main.js"></script>
+</body>
+</html>

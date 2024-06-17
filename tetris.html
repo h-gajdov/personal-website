@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris AI</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Inconsolata font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="background"></div>
+
+<div id="navbar-container">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html" class="selected">Projects</a>
+    <a href="contact.html">Contact</a>
+    <a id="clock">12:27 AM</a>
+</div>
+
+<div class="project-description">
+    <h1>Tetris AI</h1>
+    <p>For my matura project work I worked on a tetris AI using a genetic algorithm. It was programmed using JavaScript. It managed to break the human record in 20 generations of simulation.</p>
+    <div class="images-container">
+        <img style="height: auto" src="img/projects/tetris-1.jpg" alt="Tetris AI">
+        <img style="height: auto" src="img/projects/tetris-3.jpg" alt="Tetris AI">
+        <img style="width: 26.61vw; height: auto" src="img/projects/tetris-2.jpg" alt="Tetris AI">
+    </div>
+</div>
+
+<div id="contacts-container">
+    <a href="https://www.facebook.com/hristijan.gajdov/" class="logo">
+        <img src="img/facebook-logo.png" alt="Facebook Logo">
+    </a>
+    <a href="https://www.upwork.com/freelancers/~0118cc0f1273d54744" class="logo">
+        <img src="img/upwork-logo.png" alt="Upwork Logo">
+    </a>
+    <a href="https://www.instagram.com/h.gajdov/" class="logo">
+        <img src="img/instagram-logo.png" alt="Instagram Logo">
+    </a>
+    <a href="https://github.com/h-gajdov" class="logo">
+        <img src="img/github-logo.png" alt="Github Logo">
+    </a>
+
+    <div id="fullscreen-button">
+        <img src="img/fullscreen-icon.png" alt="Fullscreen image">
+    </div>
+</div>
+
+<div id="mouse-follower">
+    <div class="circle smaller"></div>
+    <div class="circle larger"></div>
+</div>
+
+<canvas></canvas>
+
+<script src="js/main.js"></script>
+</body>
+</html>
