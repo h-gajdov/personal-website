@@ -5,6 +5,14 @@ body {
     color: white;
 }
 
+.tilt-container {
+    perspective: 1000px;
+}
+
+.tilt {
+    transition: 0.1s;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -25,7 +33,7 @@ a {text-decoration: none;}
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: url('https://s3.us-east-2.amazonaws.com/visualfilterswebsite/uploads/blog/202301/img_63cc3edaa51bf0-14425358-80508511.jpg') no-repeat;
+    background: url('img/background.jpg') no-repeat;
     background-size: 100% 100%;
     z-index: -1;
 }
@@ -54,11 +62,6 @@ a {text-decoration: none;}
     transform: translateY(-3px);
 }
 
-#navbar-container a:nth-child(6) {
-    width: auto;
-    pointer-events: none;
-}
-
 #navbar-container a:last-child {
     width: 5.642vw;
     margin-left: auto;
@@ -78,7 +81,7 @@ a {text-decoration: none;}
 
 #contacts-container a {
     user-select: none;
-    margin-left: 1.5965vw; /*30 px*/
+    margin-left: 1.5965vw;
 }
 
 #contacts-container img {
@@ -88,12 +91,10 @@ a {text-decoration: none;}
 }
 
 #contacts-container div {
-    display: inline-block;
     background: #131313;
     margin-left: auto;
-    margin-right: 1.86vw; /*35px*/
+    margin-right: 1.86vw;
     border-radius: 50%;
-    /*padding: 12px;*/
     padding: 0.7vw;
 }
 
@@ -112,24 +113,15 @@ a {text-decoration: none;}
 }
 
 #home-content-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     display: flex;
+    height: 85vh;
 
     justify-content: center;
     align-items: center;
-    /*gap: 30px;*/
     gap: 1.5vw;
 }
 
-#main-content {
-    color: white;
-}
-
-#main-content h1{
+#main-content h1 {
     font-size: 1.9vw;
     margin-bottom: 0.7983vw;
     font-weight: 700;
@@ -200,14 +192,12 @@ canvas {
     margin: 7%;
 
     font-family: 'Inconsolata', monospace;
-    font-size: 1.9vw; /* 36px */
+    font-size: 1.9vw;
     font-weight: 300;
-    color: white;
 }
 
 #landing-content img {
     border-radius: 1.86vw;
-    /*mask-image: linear-gradient(to right, #000, rgba(0,0,0,0.2));*/
 }
 
 #landing-content p {
@@ -224,7 +214,6 @@ canvas {
     grid-template-rows: auto auto;
     justify-content: center;
     grid-column-gap: 3.73vw;
-    color: white;
     margin-bottom: 2%;
 }
 
@@ -234,17 +223,15 @@ canvas {
 
 #about-me-text {
     font-size: 0.96vw;
-    /*text-align: justify;*/
     font-weight: 200;
     margin: 0;
     background: rgba(40, 40, 40, 0.9);
     border-radius: 20px;
     height: 18.9vw;
-    padding: 20px 30px;
+    padding: 1.064vw 1.597vw;
 }
 
 #about-me-text a {
-    color: white;
     text-decoration: underline;
 }
 
@@ -258,6 +245,7 @@ canvas {
 .skill-card {
     box-sizing: border-box;
     width: 100%;
+    height: 100%;
     background: #282828;
     border-radius: 1.067vw;
     padding: 1.067vw 1.5965vw;
@@ -274,19 +262,19 @@ canvas {
     margin: 0.267vw 0;
 }
 
-.skill-card:nth-child(1) .filler {
+.tilt-container:nth-child(1) > .skill-card .filler {
     width: 55%;
 }
 
-.skill-card:nth-child(2) .filler {
+.tilt-container:nth-child(2) > .skill-card .filler {
     width: 15%;
 }
 
-.skill-card:nth-child(3) .filler {
+.tilt-container:nth-child(3) > .skill-card .filler {
     width: 30%;
 }
 
-.skill-card:nth-child(4) .filler {
+.tilt-container:nth-child(4) > .skill-card .filler {
     width: 20%;
 }
 
@@ -315,13 +303,6 @@ canvas {
 
 .skill-labels p {
     font-size: 0.48vw;
-}
-
-#headings h1 {
-    font-size: 1.921vw;
-    margin-bottom: 0.8vw;
-    margin-top: 1.334vw;
-    font-weight: 700;
 }
 
 #hobbies-container {
@@ -443,7 +424,7 @@ canvas {
 
 #contacts-flex textarea {
     resize: none;
-    grid-column: 1 / 3;
+    grid-column: 1 / end;
 }
 
 #contacts-flex input, #contacts-flex textarea {
@@ -456,10 +437,8 @@ canvas {
 
 #contacts-flex button {
     grid-row: 3 / 4;
-    grid-column: 1 / 3;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    grid-column: 1 / end;
+    justify-self: center;
     background: #131313;
     color: white;
     border-radius: 7px;
